@@ -151,6 +151,7 @@ section {
 .about,
 .services,
 .skills,
+.skills1,
 .teams,
 .contact,
 footer {
@@ -159,6 +160,7 @@ footer {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.skills1 .skills1-content1,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -334,7 +336,10 @@ section .title::after {
 
 /* about section styling */
 .about .title::after {
-  content: 'who i am';
+  content: 'Who i am';
+  background: rgb(0, 0, 0);
+  border: #111;
+  border-radius: 15px;
 }
 .about .about-content .left {
   width: 45%;
@@ -461,16 +466,16 @@ section .title::after {
 }
 
 /* services section styling */
-.services{
+.services {
   display: flex;
   background: url('https://images.unsplash.com/photo-1631375937044-6dd5beac01d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80')
     no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
 }
 /* .services,
 .teams {
@@ -483,10 +488,10 @@ section .title::after {
 }
 .services .title::before,
 .teams .title::before {
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 .services .title::after {
-  content: 'what i provide';
+  content: 'What i provide';
   background: rgb(255, 255, 255);
   border: #111;
   border-radius: 15px;
@@ -526,7 +531,10 @@ section .title::after {
 /* skills section styling */
 
 .skills .title::after {
-  content: 'what i know';
+  content: 'What i know';
+  background: rgb(0, 0, 0);
+  border: #111;
+  border-radius: 15px;
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -598,22 +606,105 @@ section .title::after {
   width: 20%;
 }
 
+/*    other skills    */
+
+.skills1 .title::before {
+  background: rgb(0, 0, 0);
+}
+
+.skills1 .title::after {
+  content: 'Animation';
+  background: rgb(0, 0, 0);
+  border: #111;
+  border-radius: 15px;
+}
+.skills1 .skills1-content1 .column {
+  width: calc(50% - 30px);
+}
+.skills1 .skills1-content1 .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills1 .skills1-content1 .left p {
+  text-align: justify;
+}
+.skills1 .skills1-content1 .left a {
+  display: inline-block;
+  background: rgb(220, 97, 20);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(220, 97, 20);
+  transition: all 0.3s ease;
+}
+.skills1 .skills1-content1 .left a:hover {
+  color: rgb(220, 97, 20);
+  background: none;
+}
+.skills1 .skills1-content1 .right .bars {
+  margin-bottom: 15px;
+}
+.skills1 .skills1-content1 .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills1 .skills1-content1 .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills1 .skills1-content1 .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.skills1 .skills1-content1 .right .line::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(220, 97, 20);
+}
+.skills1-content1 .right .blender::before {
+  width: 60%;
+}
+.skills1-content1 .right .zbrush::before {
+  width: 70%;
+}
+.skills1-content1 .right .md::before {
+  width: 70%;
+}
+.skills1-content1 .right .cc3::before {
+  width: 50%;
+}
+.skills1-content1 .right .sp::before {
+  width: 40%;
+}
+
+
 /* teams section styling */
 
-.teams{
+.teams {
   display: flex;
   background: url('https://images.unsplash.com/photo-1518085250887-2f903c200fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')
     no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
 }
 .teams .title::after {
   background: rgb(255, 255, 255);
-  content: 'who with me';
+  content: 'Who with me';
   border: #111;
   border-radius: 15px;
 }
@@ -697,7 +788,10 @@ section .title::after {
 
 /* contact section styling */
 .contact .title::after {
-  content: 'get in touch';
+  content: 'Get in touch';
+  background: rgb(0, 0, 0);
+  border: #111;
+  border-radius: 15px;
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -815,8 +909,10 @@ section .title::after {
 }
 
 .social .title::after {
-  background: #111;
-  content: 'follow us';
+  content: 'Follow us';
+  background: rgb(255, 255, 255);
+  border: #111;
+  border-radius: 15px;
 }
 
 .wrapper {

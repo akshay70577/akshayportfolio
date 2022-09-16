@@ -1311,6 +1311,10 @@ footer span a:hover {
     font-size: 30px;
     font-weight: 600;
   }
+  .qualification__data{
+    gap:0.2rem;
+  
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 478px) and (-webkit-min-device-pixel-ratio: 2) {

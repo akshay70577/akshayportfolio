@@ -472,7 +472,7 @@ section .title::after {
     no-repeat center;
   height: 100vh;
   color: #fff;
-  min-height: 500px;
+  min-height: 800px;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
@@ -482,7 +482,6 @@ section .title::after {
   color: rgb(255, 255, 255);
   background: #111;
 } */
-
 
 /* 
   .teams {
@@ -515,6 +514,7 @@ section .title::after {
   background: #222;
   text-align: center;
   border-radius: 6px;
+  margin: 10px;
   padding: 50px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -619,8 +619,8 @@ section .title::after {
 .skills-content .right .python::before {
   width: 20%;
 }
-.skills{
-    margin-bottom: -10%;
+.skills {
+  margin-bottom: -10%;
 }
 /*    other skills    */
 
@@ -704,99 +704,86 @@ section .title::after {
   width: 40%;
 }
 
-
-
-
 /* teams section styling */
 .teams {
-    color: #fff;
-    background: url('https://images.unsplash.com/photo-1631375937044-6dd5beac01d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80')
+  color: #fff;
+  background: url('https://images.unsplash.com/photo-1631375937044-6dd5beac01d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80')
     no-repeat center;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-
-  }
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
 
 .teams .title::after {
-    background: rgb(255, 255, 255);
-    content: 'who with me';
-    
-    border: #111;
-    border-radius: 15px;
-  }
-  
-  .teams .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    
-    
-  }
-  
-  .teams .carousel .card:hover {
-    background: crimson;
-  }
-  .teams .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  .teams .carousel .card:hover .box {
-    transform: scale(1.05);
-  }
-  .teams .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-  }
-  .teams .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-  }
-  
-  .teams .carousel .card:hover img {
-    border-color: #fff;
-  }
-  .owl-dots {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-  }
-  .owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-  }
-  .owl-dot.active,
-  .owl-dot:hover {
-    background: crimson !important;
-  }
-  
+  background: rgb(255, 255, 255);
+  content: 'who with me';
 
+  border: #111;
+  border-radius: 15px;
+}
 
+.teams .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
 
+.teams .carousel .card:hover {
+  background: rgb(220, 97, 20);
+}
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.teams .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgb(220, 97, 20);
+  transition: all 0.3s ease;
+}
 
-
-
+.teams .carousel .card:hover img {
+  border-color: #fff;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid rgb(220, 97, 20) !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: rgb(220, 97, 20) !important;
+}
 
 /* contact section styling */
 .contact .title::after {
@@ -1166,24 +1153,22 @@ footer span a:hover {
       no-repeat center;
     height: 100vh;
     color: #fff;
-    min-height: 1100px;
+    min-height: 1400px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
   }
- /* for teams for mobile */
+  /* for teams for mobile */
   .teams {
     color: #fff;
     background: url('https://images.unsplash.com/photo-1631375937044-6dd5beac01d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80')
-    no-repeat center;
+      no-repeat center;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-
   }
-
 
   /* Social media  */
   .wrapper .button {
@@ -1199,6 +1184,10 @@ footer span a:hover {
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
+  }
+
+  .qualification__data {
+    gap: 0.7rem;
   }
 }
 
@@ -1310,10 +1299,6 @@ footer span a:hover {
   .section__title {
     font-size: 30px;
     font-weight: 600;
-  }
-  .qualification__data{
-    gap:0.2rem;
-  
   }
 }
 

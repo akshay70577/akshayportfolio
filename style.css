@@ -688,6 +688,9 @@ section .title::after {
   top: 0;
   background: rgb(220, 97, 20);
 }
+.skills1-content1 .right .maya::before {
+  width: 30%;
+}
 .skills1-content1 .right .blender::before {
   width: 60%;
 }
